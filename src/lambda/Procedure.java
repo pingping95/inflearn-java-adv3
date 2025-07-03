@@ -1,4 +1,4 @@
-package lambda.start;
+package lambda;
 
 public interface Procedure {
     void run();

@@ -1,2 +1,15 @@
-package lambda.lambda1;public class ProcedureMain2 {
+package lambda.lambda1;
+
+import lambda.Procedure;
+
+public class ProcedureMain2 {
+
+    public static void main(String[] args) {
+
+        Procedure procedure = () -> {
+            System.out.println("Hello Lambda");
+        };
+
+        procedure.run();
+    }
 }

@@ -19,23 +19,21 @@ public class Ex1RefMainV3 {
     }
 
     public static void main(String[] args) {
-        Procedure dice = new Procedure() {
+        hello(new Procedure() {
             @Override
             public void run() {
                 int randomValue = new Random().nextInt(6) + 1;
                 System.out.println("주사위 = " + randomValue);
             }
-        };
+        });
 
-        Procedure sum = new Procedure() {
+        hello(new Procedure() {
             @Override
             public void run() {
                 for (int i = 1; i <= 3; i++) {
                     System.out.println("i = " + i);
                 }
             }
-        };
-        hello(dice);
-        hello(sum);
+        });
     }
 }
