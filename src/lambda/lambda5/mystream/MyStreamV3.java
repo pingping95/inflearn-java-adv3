@@ -48,4 +48,9 @@ public class MyStreamV3<T> {
             consumer.accept(element);
         }
     }
+
+    // 추가 : getFirst()를 호출하면 스트림에 보관된 첫 번째 항목을 반환
+    public T getFirst() {
+        return internalList.get(0);
+    }
 }
