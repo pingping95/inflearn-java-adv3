@@ -25,7 +25,5 @@ public class OptionalSimpleMain {
         // 값이 없는 Optional에서 get을 호출하면 NoSuchElementException 발생
         Object o2 = optional2.get();
         System.out.println("o2 = " + o2);
-
     }
-
 }
